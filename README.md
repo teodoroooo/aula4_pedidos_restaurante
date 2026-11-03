@@ -44,10 +44,15 @@ lib/
 
 ## Como executar
 
-O repositório contém o código-fonte (`lib/`) e o `pubspec.yaml`. Para gerar as pastas das plataformas, rode na raiz do projeto:
-
 ```bash
-flutter create . --platforms=web,android
 flutter pub get
 flutter run
 ```
+
+## Testes
+
+```bash
+flutter test
+```
+
+Os testes em `test/widget_test.dart` passam por todo o fluxo do pedido. Eles verificam a seleção obrigatória, o retorno com a escolha mantida, o retorno ao início, os valores e o total na finalização, o bloqueio do voltar e o "Novo pedido".
